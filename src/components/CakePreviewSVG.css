@@ -1,0 +1,109 @@
+.cake-preview-svg-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+    background: var(--gradient-pastel);
+    border-radius: var(--radius-lg);
+    min-height: 350px;
+    max-height: 450px;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cake-svg {
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.15));
+    transition: transform 0.5s ease;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.cake-svg:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+.sparkles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.sparkle {
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.preview-label {
+    margin-top: var(--spacing-lg);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-pink);
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .cake-preview-svg-container {
+        min-height: 180px;
+        /* Much smaller */
+        padding: var(--spacing-sm);
+        margin-bottom: 0;
+    }
+
+    .sparkle {
+        font-size: 0.8rem;
+    }
+
+    .cake-svg {
+        max-height: 160px;
+        /* Compact size */
+    }
+
+    .preview-label {
+        font-size: 0.9rem;
+        margin-top: var(--spacing-xs);
+    }
+}
+
+/* For larger screens, limit height to avoid scrolling */
+@media (min-width: 1024px) {
+    .cake-preview-svg-container {
+        min-height: 300px;
+        /* Reduced min-height */
+        max-height: 400px;
+        /* Limit max height */
+        padding: var(--spacing-md);
+    }
+
+    .cake-svg {
+        max-height: 350px;
+        /* Ensure SVG fits nicely */
+    }
+}
+
+/* Enhancements for very large screens */
+@media (min-width: 1200px) {
+    .cake-preview-svg-container {
+        max-height: 600px;
+        /* Allow much taller container */
+        min-height: 500px;
+        padding: var(--spacing-lg);
+    }
+
+    .cake-svg {
+        max-height: 550px;
+        /* Allow SVG to grow significantly */
+        height: auto;
+        width: auto;
+        min-width: 400px;
+        /* Ensure it takes up space */
+    }
+}
