@@ -1,16 +1,36 @@
-# React + Vite
+# Cake Order App
+This is a cake ordering app that allows users to order cakes online.
+App's language is Swedish.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Required Technologies
+- Node.js
+- npm
+- React
+- Tailwind CSS
+- Framer Motion
+- Vite
 
-Currently, two official plugins are available:
+# How to run the app
+1. Clone the repository
+2. Install dependencies: npm install
+3. Run the app: npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+# App Images
+![Contact us with mailto](./app_images/1.jpg)
+![Contact us with mailto](./app_images/2.jpg)
+![Contact us with mailto](./app_images/3.jpg)
+![Contact us with mailto](./app_images/4.jpg)
+![Contact us with mailto](./app_images/5.jpg)
+![Contact us with mailto](./app_images/6.jpg)
+![Contact us with mailto](./app_images/7.jpg)
+![Contact us with mailto](./app_images/8.jpg)
+![Contact us with mailto](./app_images/9.jpg)
+![Contact us with mailto](./app_images/10.jpg)
+![Contact us with mailto](./app_images/11.jpg)
+![Contact us with mailto](./app_images/12.jpg)
+![Contact us with mailto](./app_images/13.jpg)
+![Contact us with mailto](./app_images/14.jpg)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
